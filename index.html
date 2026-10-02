@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Interface Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome dùng cho các icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. FIXED HEADER -->
+    <header class="main-header">
+        <div class="header-left">
+            <i class="fa-brands fa-facebook facebook-logo"></i>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm trên Facebook">
+            </div>
+        </div>
+
+        <nav class="header-center">
+            <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-user-group"></i></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-tv"></i></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-store"></i></a>
+        </nav>
+
+        <div class="header-right">
+            <button class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+            <button class="icon-btn"><i class="fa-brands fa-facebook-messenger"></i></button>
+            <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+            <div class="user-avatar">
+                <img src="https://picsum.photos/id/1005/40/40" alt="Avatar">
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. MAIN CONTAINER (LAYOUT 3 CỘT) -->
+    <div class="main-container">
+        
+        <!-- SIDEBAR TRÁI -->
+        <aside class="sidebar sidebar-left">
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <img src="https://picsum.photos/id/1005/36/36" class="avatar-small" alt="User">
+                    <span>Nguyễn Văn A</span>
+                </li>
+                <li class="menu-item"><i class="fa-solid fa-user-group icon-blue"></i> <span>Bạn bè</span></li>
+                <li class="menu-item"><i class="fa-solid fa-clock icon-blue"></i> <span>Kỷ niệm</span></li>
+                <li class="menu-item"><i class="fa-solid fa-bookmark icon-purple"></i> <span>Đã lưu</span></li>
+                <li class="menu-item"><i class="fa-solid fa-users icon-blue"></i> <span>Nhóm</span></li>
+                <li class="menu-item"><i class="fa-solid fa-store icon-blue"></i> <span>Marketplace</span></li>
+            </ul>
+        </aside>
+
+        <!-- NỘI DUNG CHÍNH (NEWS FEED) -->
+        <main class="main-content">
+            <!-- Ô đăng bài -->
+            <div class="card create-post">
+                <div class="post-top">
+                    <img src="https://picsum.photos/id/1005/40/40" class="avatar-small" alt="User">
+                    <input type="text" placeholder="A ơi, bạn đang nghĩ gì thế?">
+                </div>
+                <hr>
+                <div class="post-bottom">
+                    <button><i class="fa-solid fa-video icon-red"></i> Video trực tiếp</button>
+                    <button><i class="fa-solid fa-images icon-green"></i> Ảnh/video</button>
+                    <button><i class="fa-solid fa-face-smile icon-yellow"></i> Cảm xúc</button>
+                </div>
+            </div>
+
+            <!-- Bài viết 1 -->
+            <div class="card post">
+                <div class="post-header">
+                    <img src="https://picsum.photos/id/1025/40/40" class="avatar-small" alt="User">
+                    <div>
+                        <h4>Lập Trình Web Việt Nam</h4>
+                        <span>2 giờ trước • <i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                </div>
+                <p class="post-text">Xây dựng giao diện Facebook bằng HTML và CSS cực đơn giản! Mọi người thấy thế nào?</p>
+                <img src="https://picsum.photos/id/1068/600/350" class="post-img" alt="Post Image">
+                <div class="post-actions">
+                    <button><i class="fa-regular fa-thumbs-up"></i> Thích</button>
+                    <button><i class="fa-regular fa-comment"></i> Bình luận</button>
+                    <button><i class="fa-solid fa-share"></i> Chia sẻ</button>
+                </div>
+            </div>
+
+            <!-- Bài viết 2 -->
+            <div class="card post">
+                <div class="post-header">
+                    <img src="https://picsum.photos/id/1012/40/40" class="avatar-small" alt="User">
+                    <div>
+                        <h4>Frontend Developer Club</h4>
+                        <span>5 giờ trước • <i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                </div>
+                <p class="post-text">Thành quả bài tập hoàn thành layout fixed header và sidebar linh hoạt. Học CSS Flexbox ngay hôm nay!</p>
+                <img src="https://picsum.photos/id/1060/600/350" class="post-img" alt="Post Image">
+                <div class="post-actions">
+                    <button><i class="fa-regular fa-thumbs-up"></i> Thích</button>
+                    <button><i class="fa-regular fa-comment"></i> Bình luận</button>
+                    <button><i class="fa-solid fa-share"></i> Chia sẻ</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- SIDEBAR PHẢI -->
+        <aside class="sidebar sidebar-right">
+            <h3>Người liên hệ</h3>
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <div class="online-avatar">
+                        <img src="https://picsum.photos/id/1011/36/36" class="avatar-small" alt="Contact">
+                        <span class="online-badge"></span>
+                    </div>
+                    <span>Trần Văn B</span>
+                </li>
+                <li class="contact-item">
+                    <div class="online-avatar">
+                        <img src="https://picsum.photos/id/1027/36/36" class="avatar-small" alt="Contact">
+                        <span class="online-badge"></span>
+                    </div>
+                    <span>Lê Thị C</span>
+                </li>
+                <li class="contact-item">
+                    <div class="online-avatar">
+                        <img src="https://picsum.photos/id/1062/36/36" class="avatar-small" alt="Contact">
+                        <span class="online-badge"></span>
+                    </div>
+                    <span>Phạm Hoàng D</span>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>
